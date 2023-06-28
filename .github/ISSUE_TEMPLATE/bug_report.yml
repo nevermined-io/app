@@ -1,0 +1,74 @@
+name: Report a Bug
+description: Please let us know if there is a bug in the Nevermined Application
+title: "[Bug]: "
+labels:
+  - bug
+  - triage
+assignees:
+  - aaitor
+  - r-marques
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what you see!
+      value: A bug happened!
+    validations:
+      required: true
+  - type: dropdown
+    id: network
+    attributes:
+      label: Network
+      description: What Nevermined App network are you using?
+      options:
+        - Arbitrum One (**Production**) - <https://nevermined.app>
+        - Polygon Matic (**Production**) - <https://matic.nevermined.app>
+        - Gnosis (**Production**) - <https://gnosis.nevermined.app>
+        - Arbitrum Goerli (**Testnet**) - <https://goerli.nevermined.app>
+        - Polygon Mumbai (**Testnet**) - <https://mumbai.nevermined.app>
+        - Gnosis Chiado (**Testnet**) - <https://chiado.nevermined.app>
+        - Other (please specify)
+    validations:
+      required: true
+  - type: dropdown
+    id: metamask
+    attributes:
+      label: Metamask
+      description: Is your Metamask connected correctly to the same network?
+      options:
+        - Yes, Metamask is connected to the same network
+        - No, Metamask is not connected to the same network
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce-error
+    attributes:
+      label: "How To Reproduce?"
+      description: Please, tell us how we can reproduce this bug
+      placeholder: Tell us how to reproduce step by step
+      value: I did this and that happened!
+    validations:
+      required: true
+  - type: textarea
+    id: links
+    attributes:
+      label: "Links and transactions"
+      description: "Please add here any relevant information like links to the app where you have the problem, transaction hashes, account you are using, etc."
+      placeholder: "Asset link and transaction hash or wallet address"
+      value: "I was using this application link: https://nevermined.app/xxx and this is the transaction hash: 0x1234567890"
+    validations:
+      required: true      
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: "Screenshots and Additional context"
+      description: "Please add here any relevant screenshot or additional context about the problem."
+    validations:
+      required: false
+    
