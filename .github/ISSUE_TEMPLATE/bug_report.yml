@@ -27,12 +27,12 @@ body:
       label: Network
       description: What Nevermined App network are you using?
       options:
-        - Arbitrum One (**Production**) - <https://nevermined.app>
-        - Polygon Matic (**Production**) - <https://matic.nevermined.app>
-        - Gnosis (**Production**) - <https://gnosis.nevermined.app>
-        - Arbitrum Goerli (**Testnet**) - <https://goerli.nevermined.app>
-        - Polygon Mumbai (**Testnet**) - <https://mumbai.nevermined.app>
-        - Gnosis Chiado (**Testnet**) - <https://chiado.nevermined.app>
+        - Arbitrum One (Production) - <https://nevermined.app>
+        - Polygon Matic (Production) - <https://matic.nevermined.app>
+        - Gnosis (Production) - <https://gnosis.nevermined.app>
+        - Arbitrum Goerli (Testnet) - <https://goerli.nevermined.app>
+        - Polygon Mumbai (Testnet) - <https://mumbai.nevermined.app>
+        - Gnosis Chiado (Testnet) - <https://chiado.nevermined.app>
         - Other (please specify)
     validations:
       required: true
